@@ -1,0 +1,58 @@
+Teste de Codificação Server-Side
+Definição: O teste de codificação server-side refere-se à prática de testar as funcionalidades e a lógica de programação que são executadas no servidor. Em uma arquitetura client-server, o lado do servidor é responsável por processar as requisições dos clientes, manipular dados, acessar bancos de dados e retornar a resposta adequada. Esses testes são fundamentais para garantir que o sistema funcione de forma eficiente, segura e sem erros.
+
+Objetivos principais:
+Verificar se a lógica de negócio está funcionando como esperado.
+Garantir que as requisições e respostas entre cliente e servidor sejam tratadas de forma correta.
+Validar se a performance do servidor está dentro do esperado, especialmente em cenários de alta carga.
+Garantir que as APIs e endpoints estejam corretamente implementados e seguros.
+
+
+
+Planejamento dos Testes: Etapas
+O planejamento dos testes server-side envolve as seguintes etapas:
+Definir os objetivos do teste:
+Quais funcionalidades do servidor precisam ser validadas?
+Qual o impacto dos testes nos requisitos de desempenho, segurança e confiabilidade?
+Identificar os tipos de testes:
+Unitários: Testar funções específicas do servidor (ex: validar uma lógica de cálculo ou processamento).
+Integração: Verificar se a integração entre diferentes módulos do servidor (e.g., comunicação com o banco de dados) funciona corretamente.
+Desempenho: Avaliar o comportamento do servidor sob carga, como em testes de carga ou stress.
+Segurança: Validar a proteção contra ataques, como SQL Injection ou Cross-Site Scripting (XSS).
+Escolher as ferramentas de teste:
+Ferramentas como JUnit, Mockito, Postman, Jest, Selenium, ou JMeter podem ser usadas para diferentes tipos de testes server-side.
+Definir o ambiente de testes:
+Especificar onde os testes serão executados (por exemplo, servidor de testes, staging, ou produção).
+Definir configurações, como a versão do servidor ou banco de dados a ser utilizado.
+Criar cronograma de execução:
+Estabelecer datas para a execução dos testes, incluindo testes automatizados e manuais.
+
+
+
+Implementação dos Testes: Etapas
+A implementação de testes server-side envolve as seguintes etapas:
+Desenvolver scripts de teste:
+Criar testes automatizados utilizando a ferramenta escolhida (e.g., JUnit para Java, pytest para Python).
+Escrever casos de teste que validem os diferentes fluxos do servidor (requisições HTTP, respostas, manipulação de dados, etc.).
+Configurar mocks e stubs:
+Se necessário, utilizar mocks para simular serviços externos ou bancos de dados, garantindo que os testes sejam independentes de outras dependências.
+Automatizar os testes:
+Configurar um sistema de integração contínua (CI) para executar os testes automaticamente sempre que houver mudanças no código.
+Testes podem ser configurados em pipelines de CI/CD para garantir a consistência do código.
+Especificar dados de teste:
+Criar e fornecer dados de teste para validar as entradas e saídas de cada função no servidor. Exemplo: entradas válidas e inválidas para verificar o comportamento do servidor.
+
+
+
+Execução dos Testes
+Testes unitários: Verificar funções isoladas.
+Testes de integração: Validar comunicação entre serviços.
+Testes de desempenho: Avaliar a carga e resposta do servidor.
+Testes de segurança: Verificar vulnerabilidades e proteção contra ataques.
+Análise de Resultados
+Coletar resultados: Examinar logs, erros e relatórios.
+Analisar falhas: Investigar causas de falhas nos testes.
+Gerar relatórios: Documentar falhas, correções e status dos testes.
+Melhorias contínuas: Ajustar processos e melhorar a cobertura de testes.
+Documentar tudo: Registrar os resultados e processos.
+
